@@ -17,6 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // primarySwatch: const Color(0xFFf6c944),
         primaryColor: AppColors.yellow,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.black,
+          foregroundColor: AppColors.white,
+        ),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -60,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
         currentIndex: _selectedTabIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: AppColors.darkYellow,
         onTap: _onTabItemTapped,
       ),
     );
