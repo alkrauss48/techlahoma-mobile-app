@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:techlahoma_mobile_app/pages/events_page.dart';
 import 'package:techlahoma_mobile_app/utils/colors.dart';
 
 void main() {
@@ -51,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(),
+      body: const EventsPage(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
